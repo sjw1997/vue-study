@@ -1,11 +1,11 @@
 <template>
     <ContentBase>
         <div class="row">
-            <div class="col-3">
+            <div class="col-md-3 col-sm-12">
                 <UserProfileInfo :user="user" @change_follow_status="change_follow_status"/>
                 <UserProfileWrite v-if="is_me" @post_a_post="post_a_post"/>
             </div>
-            <div class="col-9">
+            <div class="col-md-9 col-sm-12">
                 <UserProfilePosts :user="user" :posts="posts" @delete_a_post="delete_a_post"/>
             </div>
         </div>
@@ -114,6 +114,8 @@ export default {
 </script>
 
 <style scoped>
-
+.col-sm-12 {
+    margin-bottom: 10px;
+}
 </style>
   

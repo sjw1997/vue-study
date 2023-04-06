@@ -3,10 +3,10 @@
         <div v-for="user in users" :key="user.id" class="card" @click="open_user_profile(user.id)">
             <div class="card-body">
                 <div class="row align-items-center">
-                    <div class="col-1">
+                    <div class="col-md-1 col-sm-12">
                         <img class="img-fluid" :src="user.photo" alt="">
                     </div>
-                    <div class="col-11">
+                    <div class="col-md-11 col-sm-12">
                         <div class="username">{{ user.username }}</div>
                         <div class="followerCount">粉丝：{{ user.followerCount }}</div>
                     </div>
@@ -90,7 +90,6 @@ img {
   font-size: 12px;
   font-weight: lighter;
 }
-
 
 </style>
   
