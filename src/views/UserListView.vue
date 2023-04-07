@@ -91,5 +91,11 @@ img {
   font-weight: lighter;
 }
 
+@media (max-width: 767px) {
+  .col-sm-12 {
+    text-align: center;
+  }
+}
+
 </style>
   
